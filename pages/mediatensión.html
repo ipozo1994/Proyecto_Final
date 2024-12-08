@@ -19,6 +19,11 @@
         height="95px">
       <div class="header__logo">
       </div>
+      <button class="header__hamburger" aria-label="Menu">
+        <span class="header__hamburger-bar"></span>
+        <span class="header__hamburger-bar"></span>
+        <span class="header__hamburger-bar"></span>
+      </button>
       <ul class="header__menu">
         <li class="header__item">
           <a class="header__link" href="../index.html">Inicio</a>
@@ -37,127 +42,138 @@
         </li>
       </ul>
     </nav>
-    <main>
-      <div class="card-container">
-        <div class="card">
-          <img src="../img/project-1.jpg" class="card-img-top" alt="Proyecto 1">
-          <div class="card-body">
-            <h5 class="card-title">mantenimiento</h5>
-            <p class="card-text">Trabajos de Supervisión y mantenimiento de Líneas Aéreas y Media Tensión.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/project-3.jpg" class="card-img-top" alt="Proyecto 2">
-          <div class="card-body">
-            <h5 class="card-title">instalación</h5>
-            <p class="card-text">Trabajos de mantenimiento instalación e ingeniería de Generadores Eléctricos hasta 1500
-              KVA.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/project-4.jpg" class="card-img-top" alt="Proyecto 3">
-          <div class="card-body">
-            <h5 class="card-title">ingeniería</h5>
-            <p class="card-text">Ingeniería e instalación subterranea</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/project-6.jpg" class="card-img-top" alt="Proyecto 4">
-          <div class="card-body">
-            <h5 class="card-title">obras</h5>
-            <p class="card-text">obras industriales para instalación de tendido aereo</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/project-7.jpg" class="card-img-top" alt="Proyecto 5">
-          <div class="card-body">
-            <h5 class="card-title">tableros</h5>
-            <p class="card-text">Tableros de potencia.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/project-8.jpg" class="card-img-top" alt="Proyecto 6">
-          <div class="card-body">
-            <h5 class="card-title">lineas aereas</h5>
-            <p class="card-text">Trabajos de Tendido de Líneas Aéreas en MT.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/project-10.jpg" class="card-img-top" alt="Proyecto 7">
-          <div class="card-body">
-            <h5 class="card-title">actualización de lineas</h5>
-            <p class="card-text">Trabajos de tendido y reemplazo de líneas en BT.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/project-13.jpg" class="card-img-top" alt="Proyecto 8">
-          <div class="card-body">
-            <h5 class="card-title">desarrollo</h5>
-            <p class="card-text">Tableros de transferencia automática TTA desarrollo e instalación.</p>
-          </div>
+  </header>
+  <script>
+    // Seleccionamos el botón y el menú
+    const hamburger = document.querySelector('.header__hamburger');
+    const menu = document.querySelector('.header__menu');
+
+    // Añadimos el evento de clic
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('active'); // Cambiamos el estado del menú (mostrar/ocultar)
+    });
+</script>
+  <main>
+    <div class="card-container">
+      <div class="card">
+        <img src="../img/project-1.jpg" class="card-img-top" alt="Proyecto 1">
+        <div class="card-body">
+          <h5 class="card-title">mantenimiento</h5>
+          <p class="card-text">Trabajos de Supervisión y mantenimiento de Líneas Aéreas y Media Tensión.</p>
         </div>
       </div>
-      <br>
-    </main>
-
+      <div class="card">
+        <img src="../img/project-3.jpg" class="card-img-top" alt="Proyecto 2">
+        <div class="card-body">
+          <h5 class="card-title">instalación</h5>
+          <p class="card-text">Trabajos de mantenimiento instalación e ingeniería de Generadores Eléctricos hasta 1500
+            KVA.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../img/project-4.jpg" class="card-img-top" alt="Proyecto 3">
+        <div class="card-body">
+          <h5 class="card-title">ingeniería</h5>
+          <p class="card-text">Ingeniería e instalación subterranea</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../img/project-6.jpg" class="card-img-top" alt="Proyecto 4">
+        <div class="card-body">
+          <h5 class="card-title">obras</h5>
+          <p class="card-text">obras industriales para instalación de tendido aereo</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../img/project-7.jpg" class="card-img-top" alt="Proyecto 5">
+        <div class="card-body">
+          <h5 class="card-title">tableros</h5>
+          <p class="card-text">Tableros de potencia.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../img/project-8.jpg" class="card-img-top" alt="Proyecto 6">
+        <div class="card-body">
+          <h5 class="card-title">lineas aereas</h5>
+          <p class="card-text">Trabajos de Tendido de Líneas Aéreas en MT.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../img/project-10.jpg" class="card-img-top" alt="Proyecto 7">
+        <div class="card-body">
+          <h5 class="card-title">actualización de lineas</h5>
+          <p class="card-text">Trabajos de tendido y reemplazo de líneas en BT.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../img/project-13.jpg" class="card-img-top" alt="Proyecto 8">
+        <div class="card-body">
+          <h5 class="card-title">desarrollo</h5>
+          <p class="card-text">Tableros de transferencia automática TTA desarrollo e instalación.</p>
+        </div>
+      </div>
+    </div>
     <br>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-section">
-          <img src="../img/Logo_oficial.png" alt="Logo de electricidad ariel" class="footer-logo">
-          <p class="p-footer">📍Belén de escobar, Buenos Aires.</p>
-          <p class="p-footer">☎️ Teléfono: +54 3484 531919</p>
-          <p class="p-footer">✉️ Email: electricidadariel@gmail.com</p>
-        </div>
-        <div class="footer-section">
-          <h4>Enlaces útiles</h4>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="./pages/iluminación.html">iluminación</a></li>
-            <li><a href="./pages/mediatensión.html">Media tensión</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Nuestros Servicios</h4>
-          <ul>
-            <li>Asistencia técnica WEG</a></li>
-            <li>Líneas de media tensión</a></li>
-            <li>Subestaciones</a></li>
-            <li>Máquinas</a></li>
-            <li>Automatización</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Productos WEG</h4>
-          <ul>
-            <li>Variador CFW300</a></li>
-            <li>Arranque suave SSW07</a></li>
-            <li>Contactor CWB</a></li>
-            <li>Interruptor DWB</a></li>
-            <li>Seccionadores FSW</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>electricidad ariel</h4>
-          <h6>Seguinos en nuestras redes</h6>
+  </main>
 
-          <div class="social-media">
-            <a href="https://www.instagram.com" target="_blank"><img src="../img/ig_logo.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com" target="_blank"><img src="../img/facebook_logo.png" alt="facebook">
-            </a>
-            <a href="https://wa.link/omo6wd" target="_blank"><img src="../img/logo_wpp.png" alt="whatsapp">
+  <br>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <img src="../img/Logo_oficial.png" alt="Logo de electricidad ariel" class="footer-logo">
+        <p class="p-footer">📍Belén de escobar, Buenos Aires.</p>
+        <p class="p-footer">☎️ Teléfono: +54 3484 531919</p>
+        <p class="p-footer">✉️ Email: electricidadariel@gmail.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>Enlaces útiles</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./iluminación.html">iluminación</a></li>
+          <li><a href="#">Media tensión</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Nuestros Servicios</h4>
+        <ul>
+          <li>Asistencia técnica WEG</a></li>
+          <li>Líneas de media tensión</a></li>
+          <li>Subestaciones</a></li>
+          <li>Máquinas</a></li>
+          <li>Automatización</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Productos WEG</h4>
+        <ul>
+          <li>Variador CFW300</a></li>
+          <li>Arranque suave SSW07</a></li>
+          <li>Contactor CWB</a></li>
+          <li>Interruptor DWB</a></li>
+          <li>Seccionadores FSW</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>electricidad ariel</h4>
+        <h6>Seguinos en nuestras redes</h6>
 
-            </a>
-          </div>
+        <div class="social-media">
+          <a href="https://www.instagram.com" target="_blank"><img src="../img/ig_logo.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com" target="_blank"><img src="../img/facebook_logo.png" alt="facebook">
+          </a>
+          <a href="https://wa.link/omo6wd" target="_blank"><img src="../img/logo_wpp.png" alt="whatsapp">
+
+          </a>
         </div>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

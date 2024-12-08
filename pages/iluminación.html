@@ -20,6 +20,11 @@
                 height="95px">
             <div class="header__logo">
             </div>
+            <button class="header__hamburger" aria-label="Menu">
+                <span class="header__hamburger-bar"></span>
+                <span class="header__hamburger-bar"></span>
+                <span class="header__hamburger-bar"></span>
+            </button>
             <ul class="header__menu">
                 <li class="header__item">
                     <a class="header__link" href="../index.html">Inicio</a>
@@ -38,80 +43,90 @@
                 </li>
             </ul>
         </nav>
+    </header>
+    <script>
+        // Seleccionamos el botón y el menú
+        const hamburger = document.querySelector('.header__hamburger');
+        const menu = document.querySelector('.header__menu');
 
-        <main>
-            <h2 class="subtitulo animate__animated animate__flipInY">Proyectos realizados</h2>
-            <div class="galeria">
-                <img class="imgtension" src="../img/iluminado1.jpg" alt="cargadora tolva">
-                <img class="imgtension" src="../img/iluminado2.jpg" alt="bar iluminado">
-                <img class="imgtension" src="../img/iluminado3.jpg" alt="carteleria iluminada">
-                <img class="imgtension" src="../img/iluminado4.jpg" alt="faroles iluminados">
-                <img class="imgtension" src="../img/iluminado5.jpg" alt="sala de pool">
-                <img class="imgtension" src="../img/iluminado6.jpg" alt="faroles iluminados">
-                <img class="imgtension" src="../img/iluminado7.jpg" alt="faroles iluminados">
-                <img class="imgtension" src="../img/iluminado8.webp" alt="faroles iluminados">
+        // Añadimos el evento de clic
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active'); // Cambiamos el estado del menú (mostrar/ocultar)
+        });
+    </script>
+
+    <main>
+        <h2 class="subtitulo animate__animated animate__flipInY">Proyectos realizados</h2>
+        <div class="galeria">
+            <img class="imgtension" src="../img/iluminado1.jpg" alt="cargadora tolva">
+            <img class="imgtension" src="../img/iluminado2.jpg" alt="bar iluminado">
+            <img class="imgtension" src="../img/iluminado3.jpg" alt="carteleria iluminada">
+            <img class="imgtension" src="../img/iluminado4.jpg" alt="faroles iluminados">
+            <img class="imgtension" src="../img/iluminado5.jpg" alt="sala de pool">
+            <img class="imgtension" src="../img/iluminado6.jpg" alt="faroles iluminados">
+            <img class="imgtension" src="../img/iluminado7.jpg" alt="faroles iluminados">
+            <img class="imgtension" src="../img/iluminado8.webp" alt="faroles iluminados">
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="../img/Logo_oficial.png" alt="Logo de electricidad ariel" class="footer-logo">
+                <p class="p-footer">📍Belén de escobar, Buenos Aires.</p>
+                <p class="p-footer">☎️ Teléfono: +54 3484 531919</p>
+                <p class="p-footer">✉️ Email: electricidadariel@gmail.com</p>
             </div>
-        </main>
-        <hr>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-section">
-                    <img src="../img/Logo_oficial.png" alt="Logo de electricidad ariel" class="footer-logo">
-                    <p class="p-footer">📍Belén de escobar, Buenos Aires.</p>
-                    <p class="p-footer">☎️ Teléfono: +54 3484 531919</p>
-                    <p class="p-footer">✉️ Email: electricidadariel@gmail.com</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Enlaces útiles</h4>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="./pages/iluminación.html">iluminación</a></li>
-                        <li><a href="./pages/mediatensión.html">Media tensión</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Nuestros Servicios</h4>
-                    <ul>
-                        <li>Asistencia técnica WEG</a></li>
-                        <li>Líneas de media tensión</a></li>
-                        <li>Subestaciones</a></li>
-                        <li>Máquinas</a></li>
-                        <li>Automatización</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Productos WEG</h4>
-                    <ul>
-                        <li>Variador CFW300</a></li>
-                        <li>Arranque suave SSW07</a></li>
-                        <li>Contactor CWB</a></li>
-                        <li>Interruptor DWB</a></li>
-                        <li>Seccionadores FSW</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>electricidad ariel</h4>
-                    <h6>Seguinos en nuestras redes</h6>
+            <div class="footer-section">
+                <h4>Enlaces útiles</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="#">iluminación</a></li>
+                    <li><a href="./mediatensión.html">Media tensión</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li>Asistencia técnica WEG</a></li>
+                    <li>Líneas de media tensión</a></li>
+                    <li>Subestaciones</a></li>
+                    <li>Máquinas</a></li>
+                    <li>Automatización</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Productos WEG</h4>
+                <ul>
+                    <li>Variador CFW300</a></li>
+                    <li>Arranque suave SSW07</a></li>
+                    <li>Contactor CWB</a></li>
+                    <li>Interruptor DWB</a></li>
+                    <li>Seccionadores FSW</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>electricidad ariel</h4>
+                <h6>Seguinos en nuestras redes</h6>
 
-                    <div class="social-media">
-                        <a href="https://www.instagram.com" target="_blank"><img src="../img/ig_logo.png"
-                                alt="Instagram">
-                        </a>
-                        <a href="https://www.facebook.com" target="_blank"><img src="../img/facebook_logo.png"
-                                alt="facebook">
-                        </a>
-                        <a href="https://wa.link/omo6wd" target="_blank"><img src="../img/logo_wpp.png" alt="whatsapp">
+                <div class="social-media">
+                    <a href="https://www.instagram.com" target="_blank"><img src="../img/ig_logo.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../img/facebook_logo.png"
+                            alt="facebook">
+                    </a>
+                    <a href="https://wa.link/omo6wd" target="_blank"><img src="../img/logo_wpp.png" alt="whatsapp">
 
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
