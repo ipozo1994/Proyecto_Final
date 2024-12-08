@@ -1,0 +1,53 @@
+.subtitulo {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: wavy;
+  }
+  
+  .header {
+    padding: 10px;
+    position: relative;
+  
+    &__titulo {
+        text-transform: uppercase;
+        text-align: center;
+        color: hsl(61, 100%, 50%);
+    }
+  
+    &__nav {
+        width: 100%;
+        height: auto;
+        background-color: hsla(243, 17%, 79%, 0.14);
+        margin: 0 auto;
+        border-radius: 20px;
+        @include center-flex;
+  
+        @media screen and (min-width: 768px) {
+            width: 90%;
+            height: 90px;
+        }
+    }
+  
+    &__menu {
+        list-style-type: none;
+        @include center-flex(column);
+        padding: 10px;
+  
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+  
+    &__link {
+        color: $color-primary;
+        text-decoration: none;
+        padding: 0.7rem;
+        @include transition-effect;
+  
+        &:hover {
+            background-color: rgb(0, 0, 0);
+            color: $color-hover;
+            border-radius: 20px;
+        }
+    }
+  }
